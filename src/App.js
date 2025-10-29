@@ -3,6 +3,8 @@ import LoadingScreen from "./components/LoadingScreen";
 import CharacterSelection from "./components/CharacterSelection";
 import DesertWorld from "./components/DesertWorld";
 import MusicPlayer from "./components/MusicPlayer";
+import ProjectsSection from "./components/ProjectsSection";
+import AchievementsSection from "./components/AchievementsSection";
 
 function App() {
   const [loadingDone, setLoadingDone] = useState(false);
@@ -25,6 +27,8 @@ function App() {
     <>
       <MusicPlayer />
       <DesertWorld character={selectedCharacter} />
+      <ProjectsSection />
+      <AchievementsSection />
     </>
   );
 }
