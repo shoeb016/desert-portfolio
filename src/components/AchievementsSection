@@ -1,0 +1,31 @@
+// /src/components/AchievementsSection.js
+
+import React from "react";
+
+const achievements = [
+  {
+    title: "Certified Mechanical Engineer",
+    issuer: "Institution of Engineers",
+    year: 2024
+  },
+  {
+    title: "Best Capstone Project",
+    issuer: "University of Mumbai",
+    year: 2023
+  }
+];
+
+export default function AchievementsSection() {
+  return (
+    <section style={{ padding: "2em", background: "#f0e3ca" }}>
+      <h2>Achievements & Certifications</h2>
+      <ul>
+        {achievements.map((ach, idx) => (
+          <li key={idx}>
+            <b>{ach.title}</b> - {ach.issuer} ({ach.year})
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
