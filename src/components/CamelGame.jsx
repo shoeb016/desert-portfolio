@@ -39,7 +39,6 @@ export default function CamelGame() {
         <ambientLight intensity={0.8} />
         <directionalLight position={[5,10,5]} intensity={0.5} />
         <Camel position={position} direction={direction} />
-        {/* Floor */}
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.2, 0]}>
           <planeGeometry args={[20, 20]} />
           <meshStandardMaterial color="#f6deaa" />

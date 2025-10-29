@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import CharacterSelection from "./components/CharacterSelection";
 import DesertWorld from "./components/DesertWorld";
+import BlogSection from "./components/BlogSection";
+import ContactSection from "./components/ContactSection";
 import MusicPlayer from "./components/MusicPlayer";
+import ProjectsSection from "./components/ProjectsSection";
+import ResumeSection from "./components/ResumeSection";
 
 function App() {
   const [loadingDone, setLoadingDone] = useState(false);
@@ -50,6 +54,10 @@ function App() {
       </>
     );
   }
+
+  // To add these, see the navigation logic as before
+  // Example to call sections as needed:
+  // <ProjectsSection />, <ResumeSection />, <ContactSection />, <BlogSection />
 }
 
 export default App;

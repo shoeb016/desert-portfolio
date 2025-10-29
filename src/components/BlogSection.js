@@ -1,6 +1,5 @@
 import React from "react";
 
-// Example blog/timeline items
 const timeline = [
   {
     date: "Oct 2025",
